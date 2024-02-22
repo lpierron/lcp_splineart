@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "splinart"
+name = "lcp_splinart"
 dynamic = ["version"]
 requires-python = ">=3.8"
 dependencies = ["numpy", "matplotlib"]
@@ -12,7 +12,7 @@ license = { file = "LICENSE" }
 readme = "README.md"
 
 description = "spline art generator"
-authors = [{ name = "Loic Gouarin", email = "loic.gouarin@gmail.com" }]
+authors = [{ name = "Laurent Pierron", email = "lcp02@me.com" }]
 
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -39,10 +39,10 @@ classifiers = [
 ]
 
 [tool.setuptools.dynamic]
-version = { attr = "splinart.version.__version__" }
+version = { attr = "lcp_splinart.version.__version__" }
 
 [project.scripts]
-splinart = "splinart.scripts.cli_splinart:main"
+splinart = "lcp_splinart.scripts.cli_splinart:main"
 
 [project.urls]
-Source = "https://github.com/gouarin/splinart"
+Source = "https://github.com/lpierron/lcp_splinart"
